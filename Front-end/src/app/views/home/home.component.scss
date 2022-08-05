@@ -1,0 +1,47 @@
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgb(240, 247, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__stores {
+    width: 90%;
+    height: 90%;
+    background-color: rgb(61, 152, 255);
+    h1 {
+      margin: 1rem 2rem;
+      color: rgb(255, 255, 255);
+      font-size: 1.6rem;
+    }
+    .storeUl {
+      margin: 1rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      .storeLi {
+        width: 16rem;
+        padding: 1rem;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        p {
+          margin-bottom: .6rem;
+          font-size: .8rem;
+        }
+        .merchandiseUl {
+        background-color: rgb(246, 229, 229);
+        padding: 1rem;
+        .merchandiseLi{
+          list-style: none;
+        }
+      }
+      }
+
+    }
+  }
+}

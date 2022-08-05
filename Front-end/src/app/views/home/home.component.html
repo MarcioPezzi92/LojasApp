@@ -1,0 +1,21 @@
+<div class="home">
+  <div class="home__stores">
+    <h1>Lojas e seus produtos:</h1>
+    <ul class="storeUl">
+      <li class="storeLi" *ngFor="let item of merchandise">
+        {{ item.store.name }}
+        <p>Endereço: {{ item.store.address }}</p>
+        <ul class="merchandiseUl">
+          <li class="merchandiseLi">{{ item.description }}</li>
+          <p>Preço: {{ item.price }}</p>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!--
+nome da loja
+
+produto1, produto 2
+-->

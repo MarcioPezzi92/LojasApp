@@ -1,0 +1,41 @@
+<div class="register">
+  <form #storeForm="ngForm" (ngSubmit)="onStoreCreate(storeForm.value)">
+    <h1>Loja:</h1>
+    <input type="text" placeholder="Nome:" name="name" ngModel />
+    <input type="address" placeholder="Endereço:" name="address" ngModel />
+    <button>Cadastrar</button>
+  </form>
+
+  <span></span>
+
+  <form
+    #merchandiseForm="ngForm"
+    (ngSubmit)="onMerchandiseCreate(merchandiseForm.value)"
+  >
+    <h1>Produto:</h1>
+    <input type="text" placeholder="Descrição:" name="description" ngModel />
+
+    <div class="merchandise-price">
+      <input
+        type="number"
+        placeholder="Preço:"
+        min="0.00"
+        max="10000.00"
+        step="0.01"
+        name="price"
+        ngModel
+      />
+
+      <select name="store" id="" ngModel>
+        <option value="None">Loja:</option>
+        <option
+          *ngFor="let store of merchandise"
+          [value]="merchandise.store.name"
+        >
+          {{ merchandise.store.name }}
+        </option>
+      </select>
+    </div>
+    <button>Cadastrar</button>
+  </form>
+</div>

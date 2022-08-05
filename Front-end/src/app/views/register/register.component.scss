@@ -1,0 +1,59 @@
+.register {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  background: rgb(240, 247, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  span {
+    background-color: rgb(61, 152, 255);
+    width: 60%;
+    height: 2px;
+  }
+  form {
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: rgb(254, 254, 255);
+    }
+    width: 60%;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(115, 137, 169);
+    background: rgb(61, 152, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    input, select {
+      padding: .4rem 1rem;
+      border: none;
+      border-radius: .6rem;
+    }
+    button {
+      padding: .4rem;
+      color: rgb(255, 255, 255);
+      background: rgb(61, 152, 255);
+      border: white 2px solid;
+      border-radius: 10px;
+      cursor: pointer;
+      &:hover {
+        background: rgb(61, 152, 255);
+      }
+    }
+    .merchandise-price {
+      width: 100%;
+      display: flex;
+      gap: 1rem;
+      input {
+        width: 35%;
+      }
+      select {
+        width: 65%;
+      }
+    }
+  }
+}
